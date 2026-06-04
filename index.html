@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vietnam's Growth by Decree, Ocean Bridge Advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0F2740;--brass:#B08A4F;--paper:#F7F4EE;--white:#FFFFFF;--line:#D8D0BC;--grey:#556070;--grey-2:#8C919A;--brass-soft:#F4E9D4;--maxw:960px;}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Manrope',system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .masthead{border-bottom:1px solid var(--line);}
+  .masthead .wrap{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;}
+  .brand{font-family:'Manrope';font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--ink);}
+  .brand span{color:var(--brass);}
+  .masthead .meta{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey-2);}
+  .hero{background:var(--ink);color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:520px;height:520px;background:radial-gradient(circle at center,rgba(176,138,79,.22),rgba(176,138,79,0) 62%);}
+  .hero .wrap{padding:72px 28px 60px;position:relative;z-index:1;}
+  .kicker{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin:0 0 22px;font-weight:600;}
+  .hero h1{font-family:'Spectral',serif;font-weight:500;font-size:clamp(34px,5.4vw,56px);line-height:1.05;margin:0 0 24px;letter-spacing:-.01em;}
+  .hero .deck{font-family:'Spectral',serif;font-size:clamp(19px,2.4vw,23px);line-height:1.5;color:#D7E0EA;max-width:780px;font-weight:400;}
+  .hero .byline{margin-top:34px;font-size:13px;letter-spacing:.04em;color:#9FB3C4;border-top:1px solid rgba(255,255,255,.16);padding-top:18px;max-width:780px;}
+  section{padding:14px 0;}
+  .lede{font-family:'Spectral',serif;font-size:21px;line-height:1.6;color:var(--ink);margin:48px 0 8px;}
+  h2{font-family:'Spectral',serif;font-weight:600;font-size:clamp(25px,3.4vw,33px);line-height:1.12;margin:54px 0 6px;letter-spacing:-.01em;}
+  h2 .num{display:block;font-family:'Manrope';font-weight:700;font-size:13px;letter-spacing:.2em;color:var(--brass);text-transform:uppercase;margin-bottom:10px;}
+  h3{font-family:'Manrope';font-weight:700;font-size:18px;margin:34px 0 4px;letter-spacing:.01em;}
+  p{margin:14px 0;}
+  a.fn{color:var(--brass);text-decoration:none;font-weight:600;font-size:.72em;vertical-align:super;padding:0 1px;}
+  a.fn:hover{text-decoration:underline;}
+  strong{font-weight:700;}
+  .summary{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--brass);padding:32px 34px;margin:42px 0 8px;border-radius:2px;}
+  .summary h4{font-family:'Manrope';font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--grey);margin:0 0 14px;}
+  .summary .thesis{font-family:'Spectral',serif;font-size:19px;line-height:1.45;margin:0 0 16px;color:var(--ink);}
+  .summary ul{margin:0;padding:0;list-style:none;}
+  .summary li{position:relative;padding-left:26px;margin:12px 0;font-size:15.5px;line-height:1.5;}
+  .summary li::before{content:"";position:absolute;left:0;top:8px;width:9px;height:9px;background:var(--brass);transform:rotate(45deg);}
+  .note{background:#F4F2EC;border-left:3px solid var(--grey-2);padding:16px 22px;margin:30px 0;font-size:14px;color:var(--grey);line-height:1.55;}
+  .note b{color:var(--ink);}
+  .pull{font-family:'Spectral',serif;font-weight:500;font-size:clamp(21px,2.8vw,27px);line-height:1.36;color:var(--ink);border-left:3px solid var(--amber);padding:6px 0 6px 26px;margin:38px 0;letter-spacing:-.005em;}
+  .exhibit{background:var(--white);border:1px solid var(--line);border-radius:2px;margin:38px 0;overflow:hidden;}
+  .exhibit .ehead{padding:22px 30px 6px;}
+  .exhibit .etag{font-family:'Manrope';font-weight:700;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);}
+  .exhibit .etitle{font-family:'Spectral',serif;font-size:21px;font-weight:600;line-height:1.18;margin:6px 0 0;color:var(--ink);}
+  .exhibit .esub{font-size:13.5px;color:var(--grey);margin:6px 0 0;}
+  .exhibit .ebody{padding:16px 30px 8px;}
+  .exhibit .esource{padding:12px 30px 20px;border-top:1px solid #EBE6DC;font-size:11.5px;color:var(--grey-2);line-height:1.5;}
+  .exhibit .esource b{color:var(--grey);font-weight:600;}
+  .bar-row{display:grid;grid-template-columns:128px 1fr 80px;align-items:center;gap:14px;margin:11px 0;}
+  .bar-row .lab{font-size:13px;color:var(--grey);font-variant-numeric:tabular-nums;line-height:1.2;}
+  .bar-track{background:#EDE8DF;height:26px;border-radius:1px;position:relative;overflow:hidden;}
+  .bar-fill{height:100%;background:var(--ink);width:0;transition:width 1.1s cubic-bezier(.2,.7,.2,1);}
+  .bar-fill.accent{background:var(--brass);}
+  .bar-val{font-family:'Manrope';font-weight:700;font-size:14px;text-align:right;font-variant-numeric:tabular-nums;color:var(--ink);}
+  .statstrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:20px 0;}
+  .stat{background:var(--white);padding:18px 18px 16px;}
+  .stat .v{font-family:'Spectral',serif;font-size:29px;line-height:1;color:var(--ink);}
+  .stat .v b{color:var(--brass);font-weight:600;}
+  .stat .k{font-size:12px;color:var(--grey);margin-top:8px;line-height:1.35;}
+  table.tbl{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 4px;}
+  table.tbl th{text-align:left;font-family:'Manrope';font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);border-bottom:2px solid var(--ink);padding:8px 10px;}
+  table.tbl td{padding:11px 10px;border-bottom:1px solid #ECE9E2;vertical-align:top;line-height:1.4;}
+  table.tbl td.num{font-family:'Manrope';font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;}
+  table.tbl tr:last-child td{border-bottom:none;}
+  .pill{display:inline-block;font-family:'Manrope';font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:3px 8px;border-radius:2px;}
+  .pill.prelim{background:#FBEFD8;color:#8a5a00;}
+  .pill.draft{background:#FBE3DA;color:#9c3b18;}
+  .pill.approved{background:var(--brass-soft);color:#7A5C1E;}
+  .pill.industry{background:#E9ECEF;color:#46505a;}
+  .pill.miss{background:#F6DCD6;color:#9c2a13;}
+  .tl{margin:8px 0 4px;}
+  .tl-item{display:grid;grid-template-columns:128px 1fr;gap:18px;padding:13px 0;border-top:1px solid #EBE6DC;}
+  .tl-item:first-child{border-top:none;}
+  .tl-date{font-family:'Manrope';font-weight:700;font-size:12.5px;color:var(--brass);font-variant-numeric:tabular-nums;padding-top:1px;}
+  .tl-d2{display:block;font-weight:500;color:var(--grey-2);font-size:11px;letter-spacing:.04em;}
+  .tl-body b{font-family:'Manrope';font-size:14.5px;}
+  .tl-body span{display:block;font-size:13.5px;color:var(--grey);margin-top:2px;}
+  .risk{border-left:3px solid var(--line);padding:2px 0 2px 22px;margin:18px 0;}
+  .risk b{font-family:'Manrope';}
+  .sources{background:var(--white);border-top:3px solid var(--ink);margin-top:60px;padding:36px 0 10px;}
+  .sources h2{margin-top:0;}
+  ol.src{font-size:13px;color:var(--grey);line-height:1.5;padding-left:22px;}
+  ol.src li{margin:9px 0;}
+  ol.src b{color:var(--ink);font-weight:600;}
+  footer.disc{border-top:1px solid var(--line);margin-top:30px;}
+  footer.disc .wrap{padding:26px 28px 60px;font-size:12px;color:var(--grey-2);line-height:1.6;}
+  @media (max-width:640px){
+    body{font-size:16px;}
+    .bar-row{grid-template-columns:96px 1fr 62px;gap:9px;}
+    .tl-item{grid-template-columns:92px 1fr;gap:12px;}
+    .exhibit .ebody,.exhibit .ehead,.exhibit .esource{padding-left:18px;padding-right:18px;}
+    .wrap{padding:0 18px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="top-rule" style="height:3px;background:#B08A4F"></div>
+<div class="masthead" style="background:#fff">
+  <div class="wrap">
+    <div class="brand" style="font-family:'Manrope';font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#0F2740">Ocean Bridge <span style="color:#B08A4F">&middot;</span> Advisory</div>
+    <div class="meta" style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#8C919A">Vietnam Brief &nbsp;/&nbsp; June 2026</div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker" style="font-family:'JetBrains Mono',monospace">Ocean Bridge Advisory &nbsp;&middot;&nbsp; Vietnam &nbsp;&middot;&nbsp; June 2026</p>
+    <h1>Vietnam’s Growth by Decree<span style="font-family:'Manrope',sans-serif;font-size:.42em;font-weight:500;opacity:.72;display:block;margin-top:14px;letter-spacing:.01em;line-height:1.4">Reading the Government’s Roadmap to Industrial Transformation</span></h1>
+    <p class="deck" style="font-style:italic">The opportunity is not in the market data, it is in the government instruments. This briefing examines what they reveal.</p>
+    <p class="byline">An informational briefing prepared by Ocean Bridge Advisory for boards and senior executives evaluating Vietnam as a market, manufacturing base or investment destination.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="summary">
+    <h4>Executive Summary</h4>
+    <p class="thesis">Since mid-2022, Vietnam's government has issued a series of resolutions, decrees, laws and development plans that collectively describe how it intends to reshape the economy over the next decade. Taken individually, these instruments address separate topics. Taken together, they form an increasingly integrated industrial strategy, and an unusually transparent map of where the government intends to direct capital, infrastructure, incentives and political attention.</p>
+    <p style="font-size:15px;color:#556070;margin:0 0 16px;padding-bottom:16px;border-bottom:1px solid #D8D0BC">This briefing examines the major instruments issued between 2022 and 2026 and asks four questions of each: <em>what strategic objective is being pursued; how the government intends to achieve it; what commercial opportunities it creates; and how likely delivery is.</em></p>
+    <ul>
+      <li><b>The vehicle market is at the beginning of its growth curve.</b> Only 9% of Vietnamese households own a car, against 89.4% owning a motorbike. The government's automotive strategy targets roughly double today's car-sales volume by 2030, with the transition electrified from the outset.<a href="#s28" class="fn">28</a><a href="#s27" class="fn">27</a></li>
+      <li><b>The supplier base is the most tangible commercial opening.</b> Fewer than 100 Tier-1 automotive suppliers serve a market that imports around 80% of its components, and the government has legislated cash support of up to 50% of qualifying investment cost for manufacturers who move to close that gap.<a href="#s33" class="fn">33</a><a href="#s32" class="fn">32</a></li>
+      <li><b>Incentives have shifted from tax holidays to direct cash.</b> With the OECD global minimum tax neutralising traditional concessions, semiconductor and AI R&amp;D now qualifies for cash grants of up to 50% of initial investment.<a href="#s9" class="fn">9</a></li>
+      <li><b>The technology sector runs in parallel to automotive.</b> Vietnam has attracted $11.6 billion of registered semiconductor investment, the world&rsquo;s first standalone Digital Technology Industry Law came into force in January 2026, and the government targets semiconductor revenue above $25 billion by 2030. The same cash incentives available to EV-component makers apply equally to automotive-grade semiconductors and AI R&amp;D.<a href="#s18" class="fn">18</a><a href="#s10" class="fn">10</a></li>
+      <li><b>Power is the binding constraint.</b> Every electrification and data-centre ambition depends on delivering roughly 90 to 100 gigawatts of grid capacity by 2030. The plan exists; the grid is already congested and major projects run late.<a href="#s37" class="fn">37</a></li>
+    </ul>
+    <p style="font-size:15px;color:#556070;font-style:italic;margin:16px 0 0;padding-top:16px;border-top:1px solid #D8D0BC">Investors should treat Vietnam's published targets as indicators of policy direction rather than forecasts of outcome. The country's industrial ambitions are credible. The timing and magnitude of delivery remain considerably less certain.</p>
+  </div>
+
+  <h2 style="margin-top:56px;border-top:1px solid #D8D0BC;padding-top:48px">Why these instruments matter</h2>
+
+  <p>Many analyses of Vietnam begin with GDP growth, demographics or labour costs. Those factors matter. They do not, however, explain what is happening today.</p>
+
+  <p>The defining characteristic of Vietnam's current development model is the degree to which economic transformation is being directed through formal government instruments. The state is not simply setting regulatory conditions and allowing markets to operate. It is publishing specific objectives, attaching incentives and budget, setting timelines, and expecting industry to align.</p>
+
+  <p>The instruments examined in this briefing are not independent reforms. The green-transport mandate established the framework for electrification. Supporting-industry legislation created incentives for the supply chain required to support that transition. The national semiconductor strategy set objectives for the technology capability required by modern vehicles and advanced manufacturing. The revised National Power Plan established the infrastructure programme needed to sustain industrial expansion. The International Financial Centre framework opened a new channel for international capital. Each instrument supports the others. The ambition is increasingly integrated, even when the drafting is not.</p>
+
+  <p>This matters to foreign executives because it means Vietnam has published more of its economic roadmap than most emerging markets do. The uncertainty is not about direction. It is about delivery.</p>
+
+  <h2 style="margin-top:48px">Why Vietnam, and why now</h2>
+
+  <p>Vietnam's current momentum is not solely a domestic story. It is occurring at the intersection of several global shifts that are simultaneously creating pressure on foreign companies to act.</p>
+
+  <p>Supply chains continue to diversify beyond China. Technology restrictions and geopolitical competition are encouraging manufacturing relocation. Companies are reassessing concentration and resilience risk. ASEAN economies are competing aggressively for industrial investment, and Vietnam is competing harder than most.</p>
+
+  <p>The government's policy response has been to position Vietnam as a preferred destination for capital and capability that might otherwise flow elsewhere in Asia. The instruments analysed in this briefing are therefore not only domestic reforms. They are competitive tools designed to attract investment that is already in motion.</p>
+
+  <p>The long-term opportunity is not simply that Vietnam will consume more vehicles, electronics or technology products. The more significant opportunity is that Vietnam intends to manufacture them, and is systematically creating the conditions to do so.</p>
+
+  <h2 style="margin-top:48px">The central question</h2>
+
+  <p>The question facing investors is not whether Vietnam's ambitions are real. The government has stated them clearly and repeatedly, in binding instruments, with named targets and published timelines.</p>
+
+  <p>The more important question is whether the country's infrastructure, workforce, institutions and execution capability can deliver at the pace envisioned. History suggests caution. Vietnam has frequently missed industrial targets. Automotive localisation remains well below previous objectives. Supplier development has progressed more slowly than planned. Infrastructure delivery often lags ambition. Yet history also shows that Vietnam rarely abandons strategic priorities once formally adopted. Targets change; timelines slip; the direction generally holds.</p>
+
+  <p>For investors and senior executives, that distinction is critical. The instruments in this briefing should not be read as forecasts. <strong>They should be read as signals.</strong></p>
+
+  <!-- ============ SECTION 1 : THE INSTRUMENTS ============ -->
+  <h2><span class="num">01 &middot; The instruments</span>The toolkit of transformation</h2>
+
+  <p>Those instruments are producing results, not only intentions. GDP grew an estimated 8.02% in 2025, and realised foreign direct investment reached a five-year high.</p>
+
+  <div class="statstrip">
+    <div class="stat"><div class="v"><b>8.02%</b></div><div class="k">GDP growth, 2025 (NSO estimate)</div></div>
+    <div class="stat"><div class="v"><b>$27.6bn</b></div><div class="k">FDI disbursed, 2025, a 5-year high</div></div>
+    <div class="stat"><div class="v"><b>$38.4bn</b></div><div class="k">FDI registered, 2025</div></div>
+    <div class="stat"><div class="v"><b>18&rarr;14</b></div><div class="k">ministries, after the 2025 restructuring</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--grey-2);margin-top:-6px"><b>Source:</b> National Statistics Office (Ministry of Finance), full-year 2025 data.<a href="#s1" class="fn">1</a><a href="#s2" class="fn">2</a></p>
+
+  <p>The catalogue below, twelve major instruments issued in roughly thirty months, is the toolkit of that transformation. Read in sequence it shows both the ambition and the speed. For an outside company each instrument is less a regulation than a door: a structural change the state has committed to forcing, backed by budget. The rest of this briefing walks through the doors that matter most.</p>
+
+  <div class="exhibit" id="ex1">
+    <div class="ehead">
+      <div class="etag">Exhibit 1</div>
+      <div class="etitle">Vietnam&rsquo;s Growth Instruments, 2022&ndash;2026</div>
+    </div>
+    <div class="ebody">
+      <div class="tl">
+        <div class="tl-item"><div class="tl-date">Jul 2022<span class="tl-d2">Decision 876</span></div><div class="tl-body"><b>Green transition of transport <span class="pill approved">approved</span></b><span>Net-zero transport by 2050; end fossil-fuel car and motorbike manufacture/import by 2040.<a href="#s25" class="fn">25</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Sep 2024<span class="tl-d2">Decision 1018</span></div><div class="tl-body"><b>Semiconductor strategy to 2030 <span class="pill approved">approved</span></b><span>&gt;$25bn revenue and &gt;50,000 engineers by 2030.<a href="#s18" class="fn">18</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Dec 2024<span class="tl-d2">Res. 57 / Decree 182</span></div><div class="tl-body"><b>Science &amp; tech breakthrough; Investment Support Fund <span class="pill approved">approved</span></b><span>Digital economy &ge;30% of GDP by 2030; cash grants up to 50% for semiconductor/AI R&amp;D.<a href="#s6" class="fn">6</a><a href="#s9" class="fn">9</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Mar 2025<span class="tl-d2">Decree 51</span></div><div class="tl-body"><b>EV registration-fee exemption extended <span class="pill approved">approved</span></b><span>100% exemption for battery EVs to Feb 2027.<a href="#s12" class="fn">12</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Apr 2025<span class="tl-d2">Decision 768</span></div><div class="tl-body"><b>Revised Power Development Plan 8 <span class="pill approved">approved</span></b><span>~90&ndash;100 GW capacity by 2030; renewables 28&ndash;36% of mix; nuclear reintroduced.<a href="#s37" class="fn">37</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Apr&ndash;Jul 2025<span class="tl-d2">Res. 60 / 176</span></div><div class="tl-body"><b>Government restructuring <span class="pill approved">approved</span></b><span>Ministries 18&rarr;14; provinces 63&rarr;34; MPI merged into Ministry of Finance.<a href="#s3" class="fn">3</a><a href="#s4" class="fn">4</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">May 2025<span class="tl-d2">Resolution 68</span></div><div class="tl-body"><b>Private sector as lead engine <span class="pill approved">approved</span></b><span>2m enterprises and 20 global-scale private firms by 2030.<a href="#s7" class="fn">7</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Jun 2025<span class="tl-d2">Law 71 / Res. 222</span></div><div class="tl-body"><b>Digital Technology Industry Law; International Financial Centre <span class="pill approved">approved</span></b><span>First standalone digital-tech law; IFC in HCMC and Da Nang.<a href="#s10" class="fn">10</a><a href="#s36" class="fn">36</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Jul 2025<span class="tl-d2">Decrees 20 / 205</span></div><div class="tl-body"><b>Hanoi motorbike phase-out; supporting-industry incentives <span class="pill approved">approved</span></b><span>Combustion bikes out of Hanoi's core from 2026; up to 50% investment support for component makers.<a href="#s16" class="fn">16</a><a href="#s32" class="fn">32</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">Nov 2025<span class="tl-d2">Decision 2530</span></div><div class="tl-body"><b>Air-quality plan to 2030 <span class="pill approved">approved</span></b><span>By 2050, 75% of cars and 100% of motorcycles electric.<a href="#s26" class="fn">26</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">under review<span class="tl-d2">MoIT strategy</span></div><div class="tl-body"><b>Automotive Industry Development Strategy <span class="pill draft">draft</span></b><span>~0.8&ndash;1.1m car sales/yr by 2030; still in consultation.<a href="#s27" class="fn">27</a></span></div></div>
+      </div>
+    </div>
+    <div class="esource"><b>Sources:</b> primary instruments per footnote, published in the Official Gazette. The Automotive Industry Development Strategy was not yet signed into force at the time of writing.</div>
+  </div>
+
+  <!-- ============ SECTION 2 : STRUCTURAL RESET ============ -->
+  <h2><span class="num">02 &middot; The structural reset</span>The rules a foreign entrant now plays under</h2>
+
+  <p>The first shift rewrote the state itself. Central ministries were cut from 18 to 14, the Ministry of Planning and Investment was folded into the <strong>Ministry of Finance</strong>, which now owns investment licensing, and provinces were consolidated from 63 to 34 from July 2025.<a href="#s3" class="fn">3</a><a href="#s4" class="fn">4</a></p>
+
+  <p>The second shift reset the US trade relationship. A threatened 46% reciprocal tariff settled at <strong>20%</strong> from August 2025, with a <strong>40% penalty on transshipped goods</strong> and Vietnam agreeing to accept, for sale in its domestic market, vehicles built to US motor vehicle safety and emissions standards, a non-tariff barrier that had previously prevented American-standard vehicles from entering the Vietnamese showroom.<a href="#s5" class="fn">5</a> The transshipment penalty makes genuine local content a board-level compliance matter, and points in the same direction as the localisation policy in Section 04: build, do not badge.</p>
+
+  <p>The third shift addressed capital access. Resolution 222/2025 established the <strong>Vietnam International Financial Centre</strong>, launched December 2025, across Ho Chi Minh City and Da Nang, as a ring-fenced zone operating under international norms even where these diverge from domestic Vietnamese law: relaxed foreign-exchange controls, a dedicated commercial court and international arbitration centre, and a digital-asset sandbox.<a href="#s36" class="fn">36</a> Its regional-hub-by-2035 ambition is aspirational; its near-term value to a foreign executive is more specific.</p>
+
+  <div style="border-left:3px solid #B08A4F;padding:16px 22px;margin:20px 0;background:#FDFCF8;border-radius:0 2px 2px 0">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#B08A4F;margin-bottom:10px">Key Policy Shift &nbsp;&middot;&nbsp; VIFC</div>
+    <p style="margin:0;font-size:14.5px;line-height:1.6;color:#0F2740">Foreign companies can raise, hold and move capital through a jurisdiction operating under international norms within Vietnam&rsquo;s borders, without the foreign-exchange restrictions and approval processes that apply in the domestic system. For a company structuring a joint venture, acquisition or capital repatriation, this is a materially different operating environment from what Vietnam has historically offered.</p>
+  </div>
+
+  <!-- ============ SECTION 3 : VEHICLE MARKET ============ -->
+  <h2><span class="num">03 &middot; Opening one</span>The vehicle market: early on four wheels, electrifying on two</h2>
+
+  <p>Vietnam is one of the most under-motorised large economies in Asia on four wheels, and one of the most saturated on two. That asymmetry is the opportunity. Ministry of Industry and Trade figures put passenger-car ownership at about <strong>30 per 1,000 people</strong>; the 2024 census records <strong>89.4% of households owning a motorbike against just 9% owning a car</strong>.<a href="#s27" class="fn">27</a><a href="#s28" class="fn">28</a> Against regional peers the headroom is stark, and so is the gap Vietnam is trying to close.</p>
+
+  <div class="exhibit" id="ex2">
+    <div class="ehead">
+      <div class="etag">Exhibit 2</div>
+      <div class="etitle">Vietnam sits at the bottom of the regional car curve, with the most room to climb</div>
+      <div class="esub">Cars per 1,000 people, latest available; household ownership inset</div>
+    </div>
+    <div class="ebody">
+      <div class="bar-row"><div class="lab">Vietnam</div><div class="bar-track"><div class="bar-fill accent" data-w="13"></div></div><div class="bar-val">~68</div></div>
+      <div class="bar-row"><div class="lab">Thailand</div><div class="bar-track"><div class="bar-fill" data-w="52"></div></div><div class="bar-val">~280</div></div>
+      <div class="bar-row"><div class="lab">Malaysia</div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div><div class="bar-val">~542</div></div>
+      <div class="statstrip" style="margin-top:18px">
+        <div class="stat"><div class="v"><b>9%</b></div><div class="k">of households own a car (2024)</div></div>
+        <div class="stat"><div class="v"><b>89.4%</b></div><div class="k">of households own a motorbike</div></div>
+        <div class="stat"><div class="v"><b>~750</b></div><div class="k">two-wheelers per 1,000 people (2021)</div></div>
+      </div>
+    </div>
+    <div class="esource"><b>Sources:</b> regional ownership per VASI (2024), via Dien dan Doanh nghiep <span class="pill industry">industry</span>;<a href="#s34" class="fn">34</a> household ownership from the General Statistics Office 2024 census;<a href="#s28" class="fn">28</a> two-wheeler density per peer-reviewed study (2021).<a href="#s30" class="fn">30</a> Cross-country figures use differing definitions and years; treat as indicative.</div>
+  </div>
+
+  <h3>Four wheels: the decreed target, and the affordability caveat</h3>
+  <p>The clearest official statement of the car opportunity is the Ministry of Industry and Trade's draft <strong>Automotive Industry Development Strategy</strong>. It remains a draft in consultation, and its headline figure was already cut between versions: from 1 to 1.1 million car sales a year by 2030 in the 2024 draft to roughly <strong>800,000 to 900,000 by 2030</strong> in the December 2025 draft. Either way it implies roughly doubling the market against the 2024 actual of about 494,300 units.<a href="#s27" class="fn">27</a><a href="#s31" class="fn">31</a> One caveat the bullish case tends to omit: car sales actually <strong>fell in 2024</strong> from the 2022 record of 508,547, as affordability and credit conditions bit. The motorisation curve is real over a decade; it is not a smooth annual climb.<a href="#s31" class="fn">31</a></p>
+
+  <div class="exhibit" id="ex3">
+    <div class="ehead">
+      <div class="etag">Exhibit 3</div>
+      <div class="etitle">The state aims to roughly double the car market by 2030, and onshore most of it</div>
+      <div class="esub">MoIT Automotive Industry Development Strategy, latest consultation draft</div>
+    </div>
+    <div class="ebody">
+      <table class="tbl">
+        <tr><th>Target</th><th>Baseline (2024&ndash;25)</th><th>By 2030</th><th>By 2045</th></tr>
+        <tr><td>Annual market size</td><td class="num">~494,000 (2024&thinsp;<span style="font-weight:400;color:#8C919A">actual</span>)</td><td class="num">0.8&ndash;0.9m</td><td class="num">4.5&ndash;5.0m</td></tr>
+        <tr><td>Eco-friendly vehicle share</td><td class="num">~32&ndash;37%&#8224; (2025&thinsp;<span style="font-weight:400;color:#8C919A">est.</span>)</td><td class="num">25&ndash;35%</td><td class="num">75&ndash;80%</td></tr>
+        <tr><td>Share of demand met locally</td><td class="num">, </td><td class="num">70&ndash;75%</td><td class="num">80&ndash;85%</td></tr>
+        <tr><td>Local content in components</td><td class="num">7&ndash;20%</td><td class="num">55&ndash;60%</td><td class="num">80&ndash;85%</td></tr>
+        <tr><td>Vehicle &amp; component exports</td><td class="num">, </td><td class="num">$14&ndash;15bn</td><td class="num">$35&ndash;40bn</td></tr>
+      </table>
+      <p style="font-size:12px;color:#8C919A;margin:8px 0 0;font-family:'Manrope'">&#8224; 2025 eco-friendly estimate derived from VinFast domestic EV deliveries (~32% market share) plus hybrid vehicles. Notably, this approaches the lower end of the 2030 target, though volume and market concentration should be noted.</p>
+    </div>
+    <div class="esource"><b>Source:</b> MoIT draft Automotive Industry Development Strategy to 2030, vision 2045, Dec 2025 consultation version (DTiNews); earlier draft via Vietnam News and Vietstock.<a href="#s27" class="fn">27</a> <b>Draft, not approved; figures differ across drafts.</b></div>
+  </div>
+
+  <h3>Two wheels: the bigger market, electrified rather than retired</h3>
+  <p>Motorbikes are not a legacy category to be managed down. Vietnam is the world's fourth-largest motorcycle market and the third-largest for electric two-wheelers; after a soft 2024 it rebounded to around <strong>3.4 million units in 2025</strong>, with Honda at roughly 80%.<a href="#s29" class="fn">29</a> The decreed intent, in Decision 876 and Decision 2530, is to convert that fleet to electric, not shrink it: an end to fossil-fuel two-wheeler manufacture and import by 2040, and 100% of motorcycles electric by 2050, with Hanoi's first hard deadline landing in 2026.<a href="#s25" class="fn">25</a><a href="#s26" class="fn">26</a><a href="#s16" class="fn">16</a> Demand-side incentives make the switch cheap: battery EVs carry a 100% registration-fee exemption to February 2027 and a special-consumption-tax rate as low as 3% against 35 to 50% for combustion cars.<a href="#s12" class="fn">12</a> The clearest evidence the policy works is concentration in one champion: VinFast took an estimated 36% of the 2025 car market, which a foreign entrant should read as a signal that demand is real and the finished-vehicle slot is taken.<a href="#s14" class="fn">14</a></p>
+
+  <div class="exhibit" id="ex4">
+    <div class="ehead">
+      <div class="etag">Exhibit 4</div>
+      <div class="etitle">The bigger market is being electrified, not retired</div>
+      <div class="esub">Annual motorcycle sales, million units, and the decreed electrification roadmap</div>
+    </div>
+    <div class="ebody">
+      <div class="bar-row"><div class="lab">2019 <span class="tl-d2">peak</span></div><div class="bar-track"><div class="bar-fill" data-w="96"></div></div><div class="bar-val">3.25</div></div>
+      <div class="bar-row"><div class="lab">2020</div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div><div class="bar-val">2.71</div></div>
+      <div class="bar-row"><div class="lab">2023</div><div class="bar-track"><div class="bar-fill" data-w="74"></div></div><div class="bar-val">2.51</div></div>
+      <div class="bar-row"><div class="lab">2025</div><div class="bar-track"><div class="bar-fill accent" data-w="100"></div></div><div class="bar-val">~3.4</div></div>
+      <div class="tl" style="margin-top:18px">
+        <div class="tl-item"><div class="tl-date">2026<span class="tl-d2">Directive 20</span></div><div class="tl-body"><b>Hanoi core closed to fossil-fuel motorbikes</b><span>Inside Ring Road 1, widening through 2030.<a href="#s16" class="fn">16</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">2040<span class="tl-d2">Decision 876</span></div><div class="tl-body"><b>End of fossil-fuel two-wheeler manufacture and import</b><span>For domestic use, nationwide.<a href="#s25" class="fn">25</a></span></div></div>
+        <div class="tl-item"><div class="tl-date">2050<span class="tl-d2">Decision 2530</span></div><div class="tl-body"><b>100% of motorcycles electric; 75% of cars electric</b><span>Within net-zero transport.<a href="#s26" class="fn">26</a></span></div></div>
+      </div>
+    </div>
+    <div class="esource"><b>Sources:</b> sales from VAMM and MotorcyclesData <span class="pill industry">industry</span> (2019&ndash;2026);<a href="#s29" class="fn">29</a> roadmap from Decision 876 and Decision 2530.<a href="#s25" class="fn">25</a><a href="#s26" class="fn">26</a> 2025 figure is an industry estimate.</div>
+  </div>
+
+  <!-- ============ SECTION 4 : LOCALISATION ============ -->
+  <h2><span class="num">04 &middot; Opening two</span>Localisation: the supplier gap the state is paying to close</h2>
+
+  <p>The weakest link in Vietnam's automotive story is also the cleanest foreign opening: the domestic supplier base. Passenger-car localisation sits at only <strong>7 to 20%</strong>, with roughly <strong>80% of components imported</strong>, an import pool of an estimated <strong>$2 to 3.5 billion a year</strong>.<a href="#s33" class="fn">33</a> The country has fewer than 100 Tier-1 suppliers and around 150 lower-tier suppliers, against Thailand's roughly 690 and 1,700 built over four decades.<a href="#s33" class="fn">33</a> That contrast is both the deficit and the runway.</p>
+
+  <div class="exhibit" id="ex5">
+    <div class="ehead">
+      <div class="etag">Exhibit 5</div>
+      <div class="etitle">The supplier base is the gap, and the state is paying to close it</div>
+      <div class="esub">Domestic automotive component suppliers, Vietnam vs Thailand; localisation targets inset</div>
+    </div>
+    <div class="ebody">
+      <div class="bar-row"><div class="lab">Vietnam Tier-1</div><div class="bar-track"><div class="bar-fill accent" data-w="5"></div></div><div class="bar-val">&lt;100</div></div>
+      <div class="bar-row"><div class="lab">Vietnam Tier-2/3</div><div class="bar-track"><div class="bar-fill accent" data-w="9"></div></div><div class="bar-val">~150</div></div>
+      <div class="bar-row"><div class="lab">Thailand Tier-1</div><div class="bar-track"><div class="bar-fill" data-w="41"></div></div><div class="bar-val">~690</div></div>
+      <div class="bar-row"><div class="lab">Thailand Tier-2/3</div><div class="bar-track"><div class="bar-fill" data-w="100"></div></div><div class="bar-val">~1,700</div></div>
+      <table class="tbl" style="margin-top:20px">
+        <tr><th>Component localisation</th><th>Level</th><th>Status</th></tr>
+        <tr><td>Today (passenger cars)</td><td class="num">7&ndash;20%</td><td>actual</td></tr>
+        <tr><td>Old Auto Plan, by 2025</td><td class="num">40&ndash;45%</td><td><span class="pill miss">missed</span></td></tr>
+        <tr><td>Draft Auto Strategy, by 2030</td><td class="num">55&ndash;60%</td><td><span class="pill draft">draft</span></td></tr>
+        <tr><td>Draft Auto Strategy, by 2045</td><td class="num">80&ndash;85%</td><td><span class="pill draft">draft</span></td></tr>
+      </table>
+    </div>
+    <div class="esource"><b>Sources:</b> supplier counts from Vietnam News citing VASI and VCCI <span class="pill industry">industry</span>;<a href="#s33" class="fn">33</a> localisation rates from InvestVietnam and VASI;<a href="#s33" class="fn">33</a> targets from the MoIT draft strategy.<a href="#s27" class="fn">27</a> Tier counts are approximate and vary by source.</div>
+  </div>
+
+  <p>The supplier targets sit in approved instruments. <strong>Resolution 115/NQ-CP (2020)</strong> aimed for 1,000 supplier enterprises serving assemblers and multinationals by 2025, doubling to about 2,000 by 2030, with supporting-industry products meeting 70% of domestic demand by 2030.<a href="#s32" class="fn">32</a> The money sits in <strong>Decree 111/2015</strong>, as amended by <strong>Decree 205/2025</strong> (effective September 2025), which offers collaborative projects up to <strong>50% of qualifying investment cost</strong>, stacking with Decree 182 for automotive-grade electronics.<a href="#s32" class="fn">32</a><a href="#s9" class="fn">9</a> The pull is already visible: Toyota works with around 60 local suppliers, Hyundai Thanh Cong is sourcing for a high-localisation 2027 model, Thaco runs fifteen component factories, and VinFast reports above 60% localisation with a battery joint venture with Gotion in Ha Tinh.<a href="#s35" class="fn">35</a> Crucially, the electric transition resets the parts mix toward batteries, motors and electronics, where no entrenched Vietnamese incumbent yet exists.</p>
+
+  <p class="pull">Thailand built its supplier base over forty years around combustion engines. Vietnam is trying to build its base in ten, around batteries and electronics, with cash on the table. That is the opening, and the reason to qualify early.</p>
+
+  <div class="exhibit" id="ex6">
+    <div class="ehead">
+      <div class="etag">Exhibit 6</div>
+      <div class="etitle">The most valuable parts of the future vehicle have no Vietnamese owner yet</div>
+      <div class="esub">Highest-opportunity component areas, why each is open, and the policy behind it</div>
+    </div>
+    <div class="ebody">
+      <table class="tbl">
+        <tr><th>Target area</th><th>Why it is open</th><th>Policy pull</th></tr>
+        <tr><td>Battery cells, packs &amp; BMS</td><td style="white-space:normal">Electrification decided; near-zero local cell capacity; champions sourcing offshore</td><td>Decree 182; Decree 205</td></tr>
+        <tr><td>E-motors, inverters, power electronics</td><td style="white-space:normal">EV-specific; no legacy local base to displace</td><td>Decree 182; Decree 205</td></tr>
+        <tr><td>Automotive semiconductors, sensors, ADAS</td><td style="white-space:normal">The vehicle is now a computer; almost all imported</td><td>Decree 182 (50% R&amp;D); Decision 1018</td></tr>
+        <tr><td>Wiring harnesses &amp; connectors</td><td style="white-space:normal">Labour-cost advantaged, export-capable; proven by Thaco</td><td>Decree 205; tariff localisation</td></tr>
+        <tr><td>Precision metal parts, castings</td><td style="white-space:normal">Named in the components priority list</td><td>Decree 111/205 CIT</td></tr>
+        <tr><td>Charging hardware &amp; power systems</td><td style="white-space:normal">Public network thin behind the champion's own claim</td><td>Decision 876 infrastructure mandate</td></tr>
+      </table>
+    </div>
+    <div class="esource"><b>Sources:</b> opportunity assessment based on component-import data and OEM localisation activity;<a href="#s33" class="fn">33</a><a href="#s35" class="fn">35</a> policy instruments as cited in Section 01. Entry routes: qualify as a Tier-1/2 to a recruiting OEM, co-invest with a national champion under Resolution 68, and locate in a supporting-industry zone.</div>
+  </div>
+
+  <!-- ============ SECTION 5 : TECHNOLOGY ============ -->
+  <h2><span class="num">05 &middot; Opening three</span>The technology stack behind the fleet</h2>
+
+  <p>The same logic, climb the value chain on a dated timetable, governs technology, and it matters to automotive players because the modern vehicle is a computer. <strong>Decision 1018</strong> targets semiconductor revenue above $25 billion by 2030; <strong>Decree 182's Investment Support Fund</strong> backs it with cash rather than tax holidays (up to 50% of initial investment for semiconductor and AI R&amp;D); and the <strong>Digital Technology Industry Law</strong> (effective January 2026) plus a standalone <strong>AI Law</strong> (March 2026) give the sector its first dedicated legal frameworks.<a href="#s18" class="fn">18</a><a href="#s9" class="fn">9</a><a href="#s10" class="fn">10</a><a href="#s11" class="fn">11</a></p>
+
+  <div class="statstrip">
+    <div class="stat"><div class="v"><b>170+</b></div><div class="k">foreign semiconductor projects</div></div>
+    <div class="stat"><div class="v"><b>$11.6bn</b></div><div class="k">registered semiconductor capital</div></div>
+    <div class="stat"><div class="v"><b>~58</b></div><div class="k">chip-design firms (45 foreign)</div></div>
+    <div class="stat"><div class="v"><b>30%</b></div><div class="k">digital economy share of GDP target, 2030</div></div>
+  </div>
+  <p style="font-size:12px;color:var(--grey-2);margin-top:-6px"><b>Sources:</b> Deputy Minister of Finance, SemiExpo Vietnam, Nov 2025;<a href="#s19" class="fn">19</a> Resolution 57.<a href="#s6" class="fn">6</a></p>
+
+  <p>The base today is back-end: assembly, packaging and testing, the lower-margin end. Samsung (cumulative investment above $23 billion) is adding a $1.5 billion chip-test plant in Thai Nguyen for 2027; Intel, Amkor and Hana Micron run packaging plants; Foxconn has committed around $4 billion in Bac Ninh; and NVIDIA has an R&amp;D and AI data-centre agreement with the state.<a href="#s20" class="fn">20</a><a href="#s21" class="fn">21</a><a href="#s22" class="fn">22</a> For an automotive supplier the read-through is direct: a maker of automotive-grade power semiconductors, sensors or battery-management electronics is precisely the project Decree 182 was written for. The instruments in Sections 03, 04 and 05 are parts of the same system: Vietnam cannot electrify its vehicle fleet or build its components base at the decreed pace without the semiconductor and electronics supply chain sitting behind it.</p>
+
+  <!-- ============ SECTION 6 : CONSTRAINTS ============ -->
+  <h2><span class="num">06 &middot; The reality check</span>What could break it, and how to read the targets</h2>
+
+  <p>The instruments describe intent. Two things determine whether the intent becomes outcome: power, and Vietnam's delivery record.</p>
+
+  <h3>Power is the binding constraint</h3>
+  <p>Electrifying millions of vehicles and running AI data centres rests on the grid, and that is itself a decree: the <strong>Revised Power Development Plan 8</strong> (Decision 768/QD-TTg, April 2025) targets roughly <strong>90 to 100 GW of capacity by 2030</strong>, renewables at 28 to 36% of the mix, battery storage scaled from 300 MW to 10,000 to 16,300 MW, and the reintroduction of nuclear, requiring about $136 billion of investment this decade.<a href="#s37" class="fn">37</a> The risk is delivery, not ambition: transmission is already congested in the south and centre, renewable output has been curtailed, and project timelines slip, which is why the state issued a further energy-security resolution in August 2025. If the grid lags, the EV and data-centre theses both slow. This is the single dependency a foreign entrant should diligence first.<a href="#s37" class="fn">37</a></p>
+
+  <h3>Read the decreed targets against the record</h3>
+  <p>Vietnam writes ambitious numbers and frequently misses them. The previous auto-localisation plan targeted 40 to 45% by 2025 and delivered 7 to 20%; Resolution 115 sought 1,000 component suppliers by 2025 and the country has fewer than 100 at Tier-1; the auto-market target was cut between drafts; and the 2026 to 2030 double-digit GDP goal is widely judged unlikely. None of this negates the openings. It means the right posture is to back the <em>direction</em> the instruments set, while discounting the <em>magnitude and timing</em> they promise.</p>
+
+  <div class="exhibit" id="ex7">
+    <div class="ehead">
+      <div class="etag">Exhibit 7</div>
+      <div class="etitle">Read the targets against the record: Vietnam misses its industrial goals more often than it hits them</div>
+      <div class="esub">Selected decreed targets versus where they stand</div>
+    </div>
+    <div class="ebody">
+      <table class="tbl">
+        <tr><th>Decreed target</th><th>Goal</th><th>Where it stands</th></tr>
+        <tr><td>Auto localisation (old Auto Plan)</td><td class="num">40&ndash;45% by 2025</td><td>7&ndash;20% actual <span class="pill miss">missed</span></td></tr>
+        <tr><td>Component suppliers (Res. 115)</td><td class="num">1,000 by 2025</td><td>&lt;100 at Tier-1 <span class="pill miss">short</span></td></tr>
+        <tr><td>Car market (draft Auto Strategy)</td><td class="num">1&ndash;1.1m by 2030</td><td>cut to 0.8&ndash;0.9m between drafts</td></tr>
+        <tr><td>GDP growth (Res. 192)</td><td class="num">~10% 2026&ndash;30</td><td>external view: unlikely</td></tr>
+        <tr><td>Power capacity (Revised PDP8)</td><td class="num">~90&ndash;100 GW by 2030</td><td>grid congestion, project delays</td></tr>
+      </table>
+    </div>
+    <div class="esource"><b>Sources:</b> localisation and supplier data;<a href="#s33" class="fn">33</a><a href="#s32" class="fn">32</a> auto strategy drafts;<a href="#s27" class="fn">27</a> GDP assessment (East Asia Forum);<a href="#s8" class="fn">8</a> Revised PDP8.<a href="#s37" class="fn">37</a> &ldquo;External view&rdquo; reflects independent economist commentary, not a government position.</div>
+  </div>
+
+  <h3>And the residual risks</h3>
+  <div class="risk"><b>Transition disruption.</b> Merging ministries and provinces while standing up new bodies creates licensing-continuity risk during the handover.<a href="#s3" class="fn">3</a></div>
+  <div class="risk"><b>Transshipment enforcement is undefined.</b> The 40% penalty turns on how &ldquo;substantial transformation&rdquo; is interpreted, and the rules were not fully specified at the time of writing.<a href="#s5" class="fn">5</a></div>
+  <div class="risk"><b>The talent market is tight.</b> The 50,000-engineer semiconductor goal runs against a workforce officials concede is short on R&amp;D depth; localisation plans should assume expensive engineering.<a href="#s18" class="fn">18</a></div>
+
+  <p style="margin-top:38px">The distinctive feature of Vietnam's current model is the degree to which the government has published its intentions in advance, dated them, and priced them in legislation and budget. For a senior executive that transparency is both an advantage and a responsibility: an advantage because the direction is unusually legible; a responsibility because acting on it requires distinguishing between what the instruments commit to and what the country can actually deliver on the stated timetable.</p>
+
+  <p>The instruments in this briefing tell a consistent story. Vietnam is attempting to move from assembly to manufacturing, from combustion to electric, from imported components to a local supply chain, and from a low-cost labour platform to a technology-capable industrial economy. Whether it succeeds fully, partially or more slowly than planned, the instruments define where effort and capital are being directed. For a foreign company considering the region, that is the actionable information.</p>
+
+  <p>The targets may change. The timelines will slip. The direction, in our assessment, generally holds.</p>
+
+  <p style="margin-top:20px"><strong>The instruments should not be read as forecasts. They should be read as signals.</strong></p>
+
+</main>
+
+<!-- ============ SOURCES ============ -->
+
+<!-- About Ocean Bridge ============================================================ -->
+<div style="background:#0F2740;color:#C4D0D8;padding:52px 0 44px;margin-top:64px">
+  <div class="wrap">
+    <h3 style="font-family:'Spectral',serif;font-weight:500;font-size:24px;color:#fff;margin:0 0 16px;letter-spacing:-.01em">About Ocean Bridge Advisory</h3>
+    <p style="font-size:15.5px;line-height:1.75;margin:0 0 14px;max-width:700px">Ocean Bridge Advisory is an independent practice connecting senior global expertise in automotive engineering and mobility to markets across Southeast Asia. The firm advises boards and executive teams on market-entry strategy, partnership structure and programme leadership across Vietnam, Indonesia, Thailand and the Philippines, drawing on direct experience at the intersection of Western OEM engineering and regional automotive and technology development.</p>
+    <p style="font-size:15.5px;line-height:1.75;margin:0 0 28px;max-width:700px">This briefing is part of Ocean Bridge Advisory's ongoing analysis of the policy and market landscape for senior leaders evaluating engagement in the region. We publish these briefings to help global decision-makers understand what the instruments say, before they commit.</p>
+    <div style="border-top:1px solid rgba(176,138,79,.35);padding-top:20px;display:flex;flex-wrap:wrap;gap:12px 28px">
+      <a href="mailto:vjp@oceanbridgeadvisory.group" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#B08A4F;text-decoration:none">vjp@oceanbridgeadvisory.group</a>
+      <a href="https://oceanbridgeadvisory.group" target="_blank" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#B08A4F;text-decoration:none">oceanbridgeadvisory.group</a>
+      <a href="https://linkedin.com/company/ocean-bridge-advisory" target="_blank" style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#B08A4F;text-decoration:none">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<div class="sources">
+  <div class="wrap">
+    <h2 style="margin-bottom:18px"><span class="num">References</span>Sources and cross-checks</h2>
+    <p style="font-size:13px;color:var(--grey);max-width:760px">Every forward-looking number is tied to a named government instrument and labelled by status. Statistical actuals are sourced to the General Statistics Office or the issuing ministry; trade-association and third-party figures are identified as such.</p>
+    <ol class="src">
+      <li id="s1"><b>2025 FDI and GDP.</b> National Statistics Office (Ministry of Finance), full-year 2025 data, 5 Jan 2026; VnEconomy, The Investor, Vietnam News (Jan 2026). Disbursed FDI $27.62bn; registered $38.42bn; GDP 8.02%.</li>
+      <li id="s2"><b>FDI disbursement series.</b> GSO/NSO; The Investor and VIR (Jan 2026); Vietnam Briefing (22 Jan 2026).</li>
+      <li id="s3"><b>Government restructuring.</b> APFL Partners; Allen &amp; Gledhill; Lexology (2025). Ministries 18&rarr;14 from 1 Mar 2025; MPI merged into Ministry of Finance. Resolution 176/2025/QH15.</li>
+      <li id="s4"><b>Provincial consolidation.</b> PwC Vietnam; Vietnam Briefing (2025). Resolution 60-NQ/TW; Decision 759/QD-TTg; Resolution 202/2025/QH15. 63&rarr;34 provinces from 1 Jul 2025.</li>
+      <li id="s5"><b>US&ndash;Vietnam tariff framework.</b> USTR fact sheet (Oct 2025); CNBC, Time (2 Jul 2025); DHL Express (Sep 2025). 46% threatened; 20% from 7 Aug 2025; 40% transshipment; US vehicle-standard acceptance.</li>
+      <li id="s6"><b>Resolution 57-NQ/TW (22 Dec 2024).</b> Luat Vietnam; US-ASEAN Business Council. Digital economy &ge;30% of GDP by 2030.</li>
+      <li id="s7"><b>Resolution 68-NQ/TW (4 May 2025).</b> VietnamPlus; Vietnam Briefing; VinaCapital. 2m enterprises and 20 global-scale private firms by 2030.</li>
+      <li id="s8"><b>Double-digit growth target, 2026&ndash;30.</b> National Assembly Resolution 192; East Asia Forum (Jun, Dec 2025), framing it as unlikely / a forcing function.</li>
+      <li id="s9"><b>Decree 182/2024/ND-CP (31 Dec 2024), Investment Support Fund.</b> UNCTAD; Vietnam Briefing; Deloitte via The Investor; Baker McKenzie. Cash grants up to 50% of initial investment for semiconductor/AI R&amp;D; response to the global minimum tax.</li>
+      <li id="s10"><b>Law on Digital Technology Industry, Law 71/2025/QH15 (14 Jun 2025).</b> Vietnam Briefing; Baker McKenzie; One Asia Lawyers. Effective 1 Jan 2026; semiconductor chapter.</li>
+      <li id="s11"><b>Law on Artificial Intelligence.</b> Baker McKenzie (Feb 2026). Enacted 10 Dec 2025; effective 1 Mar 2026; risk-based, EU-style.</li>
+      <li id="s12"><b>Decree 51/2025/ND-CP (1 Mar 2025), EV registration fee.</b> VietnamPlus; China Briefing. Amends Decree 10/2022; 100% BEV exemption to 28 Feb 2027; BEV special consumption tax as low as 3% vs 35&ndash;50% for combustion cars.</li>
+      <li id="s14"><b>VinFast domestic 2025.</b> VinFast investor relations (13 Jan 2026); VietnamPlus; Just-Auto. 175,099 cars delivered in Vietnam; ~36% estimated domestic share (vs ~22% in 2024). The 150,000-point V-Green charging network is a company figure.</li>
+      <li id="s16"><b>Hanoi Directive 20/CT-TTg (12 Jul 2025).</b> VOV; Government News Portal; VnExpress (27 Nov 2025); Tilleke &amp; Gibbins. Fossil-fuel motorbikes barred inside Ring Road 1 from 1 Jul 2026; People's Council (26 Nov 2025) set a time/zone-based low-emission zone.</li>
+      <li id="s18"><b>Decision 1018/QD-TTg (21 Sep 2024), semiconductor strategy.</b> baochinhphu.vn; Luat Vietnam. &gt;$25bn revenue and &gt;50,000 engineers by 2030; &gt;$100bn by 2050.</li>
+      <li id="s19"><b>Semiconductor footprint.</b> Deputy Minister of Finance, SemiExpo Vietnam 2025 (7 Nov 2025), via VietnamNet and VIR. &gt;170 projects, ~$11.6bn registered; ~58 design firms (45 foreign).</li>
+      <li id="s20"><b>Samsung.</b> Reuters / CNBC (27 May 2026). &gt;$23bn cumulative; ~$1.5bn chip-test plant, Thai Nguyen, approved Mar 2026, operations from late 2027.</li>
+      <li id="s21"><b>Foxconn.</b> The Investor (Apr 2026). ~$4bn across ~20 projects in Bac Ninh.</li>
+      <li id="s22"><b>NVIDIA.</b> Reuters; The Diplomat (Dec 2024). R&amp;D and AI data-centre agreement with the state; acquisition of VinBrain.</li>
+      <li id="s25"><b>Decision 876/QD-TTg (22 Jul 2022), green transition of transport.</b> Luat Vietnam; Tilleke &amp; Gibbins; ADB; ICCT. <b>Approved.</b> Net-zero transport by 2050; cease fossil-fuel car, motorcycle and moped manufacture/import by 2040.</li>
+      <li id="s26"><b>Decision 2530/QD-TTg (19 Nov 2025), air-quality plan 2026&ndash;30.</b> vietnam.vn (Feb 2026). <b>Approved.</b> By 2050, 75% of cars and 100% of motorcycles electric.</li>
+      <li id="s27"><b>MoIT Automotive Industry Development Strategy (DRAFT).</b> Vietnam News, Vietstock (2024); DTiNews (27 Dec 2025); Vietnamnet (Jul 2025). <b>Draft, not approved.</b> 2030 target revised from 1&ndash;1.1m (2024 draft) to 0.8&ndash;0.9m (Dec 2025); local content 55&ndash;60% by 2030. Car ownership ~30 per 1,000 (&lt;9-seat), 63 per 1,000 (all cars), MoIT citing the National Traffic Safety Committee.</li>
+      <li id="s28"><b>Household vehicle ownership, 2024.</b> General Statistics Office, via Vietnamnet (8 Jan 2025). 101.1m population; 28.1m households; 9% own a car; 89.4% own a motorbike.</li>
+      <li id="s29"><b>Motorcycle market.</b> VAMM via VIR (Oct 2025) and Vietnam News (Q1 2025); MotorcyclesData (Jan 2026) <span class="pill industry">industry</span>. Peak 3.25m (2019), 2.51m (2023), ~3.4m (2025); Honda ~80%; Vietnam 4th-largest globally, 3rd-largest for e-2W.</li>
+      <li id="s30"><b>Two-wheeler density.</b> Peer-reviewed motorisation study, ScienceDirect (Aug 2025): ~450 to ~750 per 1,000, 2013&ndash;2021.</li>
+      <li id="s31"><b>Car-sales actuals.</b> Vietnamnet (Jul 2025); Dien dan Doanh nghiep. Record 508,547 (2022); 494,300 (2024, a decline); Thailand 572,675 (2024).</li>
+      <li id="s32"><b>Supporting-industry policy.</b> Resolution 115/NQ-CP (Aug 2020) via Lexology and KPMG: 1,000 suppliers by 2025, ~2,000 by 2030; SI products to 70% of demand by 2030. Decree 111/2015/ND-CP (CIT: 4-year exemption, 50% for 9 years, 10% for 15 years), amended by Decree 205/2025/ND-CP (effective 1 Sep 2025; up to 50% of qualifying investment cost), via EY, Indochine Counsel, VietnamPlus. <b>Approved.</b></li>
+      <li id="s33"><b>Localisation rate and supplier base.</b> Vietnam News (fewer than 100 Tier-1, ~150 Tier-2/3; 377 vehicle enterprises; ~80% imported; supporting industry 2.7% of industry value) <span class="pill industry">industry</span>; Automotive Logistics citing InvestVietnam (7&ndash;10%); Dien dan Doanh nghiep citing VASI (12&ndash;20%; parts imports ~$2&ndash;3.5bn/yr; Thailand ~690 Tier-1 / ~1,700 lower-tier). Tier counts approximate.</li>
+      <li id="s34"><b>Regional ownership benchmark.</b> Dien dan Doanh nghiep citing VASI (2024): ~68 per 1,000 in Vietnam vs ~280 Thailand, ~542 Malaysia. (MoIT cites 63 per 1,000 for 2023; differs by year/source.)</li>
+      <li id="s35"><b>OEM localisation and supplier development.</b> Bao Nghe An (Toyota ~40%, Vios 43%, ~58&ndash;60 suppliers); Automotive Logistics (VinFast &gt;60%, target &gt;80% by 2026, Gotion JV in Ha Tinh); Dien dan Doanh nghiep (Thaco's 15 component factories; Hyundai Thanh Cong's high-localisation 2027 model). Company-reported.</li>
+      <li id="s36"><b>Vietnam International Financial Centre.</b> Resolution 222/2025/QH15 (passed 27 Jun 2025, effective 1 Sep 2025); Decree 323/2025/ND-CP and further decrees issued 18 Dec 2025; launched 21 Dec 2025. A&amp;O Shearman; Tilleke &amp; Gibbins; Nagashima Ohno &amp; Tsunematsu; Vietnam Briefing; VOV. &ldquo;One centre, two destinations&rdquo; (HCMC, Da Nang); relaxed FX, dedicated court/arbitration, digital-asset sandbox. Regional-by-2035 / global-by-2045 are stated targets, not forecasts. <span class="pill approved">approved</span></li>
+      <li id="s37"><b>Revised Power Development Plan 8.</b> Decision 768/QD-TTg (15 Apr 2025), superseding Decision 500/2023; implementation plan Decision 1509/QD-BCT (30 May 2025); Resolution 70-NQ/TW on energy security (20 Aug 2025). A&amp;O Shearman; KPMG; Vietnam Briefing; Reccessary; US Dept of Commerce. <b>Approved.</b> ~90&ndash;100 GW capacity by 2030; renewables 28&ndash;36% of mix; battery storage 10,000&ndash;16,300 MW; nuclear (Ninh Thuan) reintroduced; ~$136bn investment to 2030; grid congestion and project delays noted as risks.</li>
+    </ol>
+  </div>
+</div>
+
+<footer class="disc">
+  <div class="wrap">
+    This briefing is an independent analysis prepared in an editorial and visual style typical of strategy-consulting publications, written for a senior-executive audience. It is <b>not affiliated with, produced by, or endorsed by any consulting firm</b>. It was compiled from publicly available Vietnamese government instruments and disclosures; readers should verify primary sources before acting. Forward-looking figures are stated government targets, labelled approved, draft or preliminary at the point of use. Data current to June 2026. Nothing here is legal, tax or investment advice.
+  </div>
+</footer>
+
+<script>
+  const bars=document.querySelectorAll('.bar-fill');
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';io.unobserve(e.target);}});},{threshold:.3});
+  bars.forEach(b=>io.observe(b));
+</script>
+</body>
+</html>
